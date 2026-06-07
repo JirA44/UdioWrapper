@@ -220,3 +220,25 @@ class UdioWrapper:
         except requests.exceptions.RequestException as e:
             print(f"Failed to download the song. Error: {e}")
 
+
+
+import requests
+
+def generate_proxy():
+    headers = {
+        "Authorization": f"Bearer {your_token_here}",
+        "Content-Type": "application/json"
+    }
+    try:
+        response = requests.post(
+            "https://www.udio.com/api/generate-proxy",
+            headers=headers,
+            json={
+                "token": "your_token_here"
+            }
+        )
+        print("Proxy generated successfully.")
+        return response.json()
+    except requests.exceptions.RequestException as e:
+        print(f"Error generating proxy: {e}")
+        return None
