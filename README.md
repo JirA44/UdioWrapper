@@ -1,3 +1,13 @@
+## Français
+
+Bibliothèque Python expérimentale pour générer de la musique à partir de prompts textuels via une API non officielle. Exemple : transmettre un prompt depuis un script ou le notebook de démonstration. Compatibilité et accès à l’API peuvent évoluer.
+
+## English
+
+An experimental Python library for generating music from text prompts through an unofficial API. Example: submit a prompt from a script or demo notebook. API access and compatibility may change.
+
+---
+
 
 # Udio Wrapper
 
